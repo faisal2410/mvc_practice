@@ -37,3 +37,20 @@ Agenda
 5.Summary and Key Takeaways
 
 */ 
+
+/*
+
+4.Title: Building a Simple MVC Pattern in PHP with Basic CRUD Operations
+
+Agenda
+1.Introduction to MVC Architecture
+2.Setting Up a Simple MVC Structure in PHP
+3.Creating Models for Data Handling
+4.Building Views for Displaying Data
+5.Developing Controllers for Business Logic
+6.Implementing Basic CRUD Operations
+7.Conclusion and Final Remarks
+
+
+
+*/ 
