@@ -66,3 +66,32 @@ Agenda
 5.Conclusion
 
 */ 
+
+/*
+
+6.Title: Mastering the Role of the Controller in PHP Web Applications
+
+Agenda
+
+1.Introduction to the Controller’s Role
+2.Controller Responsibilities and Best Practices
+3.Handling User Requests
+4.Managing Form Submissions
+5.Data Validation in the Controller
+6.Best Practices Recap
+
+*/ 
+
+/*
+
+7.Title: Building Dynamic Models in PHP: A Practical Guide to ORM, PDO, and Encapsulating Business Logic
+
+
+Agenda:
+
+1.Understanding ORM (Object-Relational Mapping) and Its Role in MVC
+2.Creating Data Models and Handling Database Interactions with PDO
+3.Implementing Model Methods to Encapsulate Business Logic
+
+
+*/ 
