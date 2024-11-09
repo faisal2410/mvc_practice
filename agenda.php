@@ -54,3 +54,15 @@ Agenda:
 
 
 */ 
+
+/*
+5.Title: Mastering Routing in MVC with PHP
+
+Agenda
+1.Introduction to Routing in MVC
+2.Understanding the Concept of Routing in MVC
+3.Setting Up a Basic Routing Mechanism in PHP
+4.Building and Testing Routes
+5.Conclusion
+
+*/ 
