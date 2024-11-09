@@ -40,16 +40,16 @@ Agenda
 
 /*
 
-4.Title: Building a Simple MVC Pattern in PHP with Basic CRUD Operations
+4.Title: Implementing a Basic MVC Pattern in PHP from Scratch
 
-Agenda
+Agenda:
+
 1.Introduction to MVC Architecture
 2.Setting Up a Simple MVC Structure in PHP
-3.Creating Models for Data Handling
-4.Building Views for Displaying Data
-5.Developing Controllers for Business Logic
-6.Implementing Basic CRUD Operations
-7.Conclusion and Final Remarks
+3.Creating Models, Views, and Controllers
+4.Building Basic CRUD Functionality with MVC Principles
+5.Connecting the MVC Components Together
+6.Conclusion and Next Steps
 
 
 
