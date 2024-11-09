@@ -95,3 +95,21 @@ Agenda:
 
 
 */ 
+
+/*
+
+8.Title: Building Dynamic Views and Templating Systems in PHP
+
+Agenda
+
+1.Introduction to Views and Templating Systems
+2.Implementing a Templating System for Views
+3.Separating Layout from Content and Using Partial Views
+4.Passing Data from Controller to View
+5.Wrapping Up
+
+
+*/ 
+
+// ob_start();
+// $content=ob_get_clean();
