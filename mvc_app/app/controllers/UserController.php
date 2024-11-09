@@ -18,7 +18,7 @@ class UserController
     public function index()
     {
         $users = $this->userModel->getAll();
-        require '../app/Views/user_index.php';
+        require '../app/views/user_index.php';
     }
 
     public function create()
