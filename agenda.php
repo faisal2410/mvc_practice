@@ -126,5 +126,21 @@ Agenda:
 
 */ 
 
+
+/*
+
+10.Title: Leveraging Dependency Injection in MVC for Clean, Maintainable Code
+
+Agenda:
+1.Introduction to Dependency Injection in MVC
+2.Understanding Dependency Management in MVC
+3.Benefits of Dependency Injection in MVC
+4.Injecting Services into Controllers
+5.Injecting Dependencies into Models
+6.Code Demonstration: Implementing Dependency Injection in a Simple MVC App
+7.Summary and Best Practices
+
+*/ 
+
 // ob_start();
 // $content=ob_get_clean();
