@@ -111,5 +111,20 @@ Agenda
 
 */ 
 
+
+/*
+9.Title: Understanding MVC and the Front Controller Pattern in PHP
+
+Agenda:
+
+1.What is the MVC Pattern?
+2.Understanding the Front Controller Pattern
+3.Creating a Central Entry Point (index.php) to Handle All Requests
+4.Practical Code Example: Implementing MVC with a Front Controller
+5.Recap and Summary
+
+
+*/ 
+
 // ob_start();
 // $content=ob_get_clean();
