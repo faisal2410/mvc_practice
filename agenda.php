@@ -142,5 +142,19 @@ Agenda:
 
 */ 
 
+/*
+
+11.Title: Building Secure Authentication and Role-Based Authorization in PHP MVC
+
+Agenda:
+1.Introduction to Authentication and Authorization
+2.Setting Up the MVC Structure
+3.Implementing User Authentication in MVC
+4.Setting Up Role-Based Access Control (RBAC)
+5.Testing Authentication and RBAC in Action
+6.Closing Remarks
+
+*/ 
+
 // ob_start();
 // $content=ob_get_clean();
