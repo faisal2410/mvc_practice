@@ -1,11 +1,10 @@
 <?php
-
 // Step 4: Simulate MVC Controller Registering a User
 class UserController
 {
     protected $eventDispatcher;
 
-    public function __construct($eventDispatcher)
+    public function __construct(EventDispatcher $eventDispatcher)
     {
         $this->eventDispatcher = $eventDispatcher;
     }
@@ -30,40 +29,9 @@ $userController = new UserController($eventDispatcher);
 $userController->register(['email' => 'test@example.com']);
 
 /*
-class UserController
-{
-    public function store($request)
-    {
-        // Retrieve form data from the request
-        $data = $request->get('form_data');
-        
-        // Pass the data to the User model for processing
-        $user = new UserModel($data);
-        $user->save();
-        
-        // Redirect to the user listing page
-        return View::redirect('/users');
-    }
-}
-*/ 
+In this example:
 
+When UserController registers a user, it dispatches a UserRegisteredEvent.
+The EventDispatcher handles this event, notifying the listeners: SendWelcomeEmailListener and LogRegistrationListener.
 
-/*
-class UserController
-{
-    private $model;
-    private $view;
-
-    public function __construct($model, $view)
-    {
-        $this->model = $model;
-        $this->view = $view;
-    }
-    
-    public function showUser($id)
-    {
-        $user = $this->model->getUserById($id);
-        $this->view->displayUser($user);
-    }
-}
 */ 

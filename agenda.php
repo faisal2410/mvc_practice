@@ -192,6 +192,16 @@ Agenda
 
 */ 
 
+/*
+15.Title: Building an Event-Driven MVC Architecture in PHP
+
+Agenda:
+1.Introduction to Event-Driven Design in MVC
+2.Why Event-Driven Architecture?
+3.Implementing Events and Listeners to Decouple MVC Components
+4.Practical Example: Implementing Event-Driven Architecture in PHP
+
+*/ 
 
 
 // ob_start();
