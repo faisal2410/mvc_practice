@@ -16,12 +16,20 @@ class AuthController
     public function login($username, $password)
     {
         $user = $this->user->findByUsername($username);
-        if ($user && password_verify($password, $user->password)) {
+        var_dump($user);
+        // die();
+        // if ($user && password_verify($password, $user->password)) {
+        //     $_SESSION['user_id'] = $user->id;
+        //     $_SESSION['role'] = $user->role;
+        //     return true;
+        // }
+        if ($user ) {
             $_SESSION['user_id'] = $user->id;
             $_SESSION['role'] = $user->role;
-            return true;
+            // return true;
         }
-        return false;
+        // var_dump($_SESSION);
+        // return false;
     }
 
     public function logout()

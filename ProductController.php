@@ -1,5 +1,55 @@
 <?php
+// Using the Service Layer in the Controller
 
+class ProductController
+{
+    protected $productService;
+
+    public function __construct(ProductService $productService)
+    {
+        $this->productService = $productService;
+    }
+
+    public function purchaseProduct($productId, $userId)
+    {
+        try {
+            return $this->productService->purchaseProduct($productId, $userId);
+        } catch (Exception $e) {
+            return $e->getMessage();
+        }
+    }
+}
+
+
+/*
+// Controller without Service Layer
+
+class ProductController
+{
+    public function purchaseProduct($productId, $userId)
+    {
+        // Business logic directly in the controller
+        $product = ProductRepository::find($productId);
+
+        if ($product->stock <= 0) {
+            throw new Exception("Product out of stock");
+        }
+        
+        // Deduct stock and update user purchase history
+        $product->stock--;
+        ProductRepository::update($product);
+        UserRepository::addPurchase($userId, $productId);
+        
+        return "Purchase successful!";
+    }
+}
+
+// Here, the controller is responsible for business logic, such as checking stock, updating the database, and managing user purchases. It’s clear that if we add more logic, the controller will quickly become difficult to manage.
+
+*/ 
+
+// Previous Example :
+/*
 class ProductController
 {
     public function store($request)
@@ -22,6 +72,7 @@ class ProductController
 }
 
 
+*/ 
 /*
 class ProductController
 {

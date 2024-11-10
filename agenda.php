@@ -155,6 +155,49 @@ Agenda:
 6.Closing Remarks
 
 */ 
+/*
+
+12.Title: Introduction to MVC and RESTful APIs in PHP
+
+Agenda:
+1.Understanding MVC Architecture in PHP
+2.Designing RESTful Routes and Resources in MVC
+3.Returning JSON Responses and Handling API Requests
+
+
+*/ 
+
+/*
+13.Title: Mastering Advanced Routing and Middleware in PHP for Dynamic and Secure Applications
+
+Agenda
+1.Introduction to Advanced Routing in PHP
+2.Setting Up Nested and Parameterized Routes
+3.Implementing Middleware for Cross-Cutting Concerns
+4.Practical Demonstration: Using Middleware for Authentication and Logging
+5.Summary and Best Practices
+
+*/ 
+
+
+/*
+
+14.Title: Enhancing Code Structure in PHP: Service Layer and Repository Pattern
+
+Agenda
+1.Introduction to the Service Layer and Repository Pattern
+2.Adding a Service Layer to Separate Business Logic from Controllers
+3.Using the Repository Pattern for Advanced Data Management
+4.Implementing the Patterns in PHP: Practical Examples
+
+*/ 
+
+
 
 // ob_start();
 // $content=ob_get_clean();
+// RESTful APIs architecture
+// Command Line Interface application
+
+// array_reverse(), array_reduce()
+

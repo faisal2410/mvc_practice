@@ -15,6 +15,7 @@ class User
 
     public function findByUsername($username)
     {
+       
         $stmt = $this->pdo->prepare("SELECT * FROM users WHERE username = :username");
         $stmt->execute(['username' => $username]);
         return $stmt->fetch(PDO::FETCH_OBJ);
