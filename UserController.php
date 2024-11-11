@@ -1,5 +1,32 @@
 <?php
 
+
+require_once 'Cache.php';
+
+class UserController {
+    private $cache;
+    private $model;
+
+    public function __construct($model) {
+        $this->cache = new Cache();
+        $this->model = $model;
+    }
+
+    public function getUser($userId) {
+        $cacheKey = "user_{$userId}";
+        $userData = $this->cache->get($cacheKey);
+
+        if (!$userData) {
+            // Fetch from database
+            $userData = $this->model->findUserById($userId);
+            $this->cache->set($cacheKey, $userData, 600); // Cache for 10 minutes
+        }
+
+        return $userData;
+    }
+}
+
+/*
 // Step 4: Simulate MVC Controller Registering a User
 class UserController
 {
@@ -9,12 +36,12 @@ class UserController
     {
         $this->eventDispatcher = $eventDispatcher;
     }
-
+    
     public function register($userData)
     {
         // Assume we saved the user to a database
         echo "User registered: " . $userData['email'] . PHP_EOL;
-
+        
         // Dispatch an event
         $event = new UserRegisteredEvent((object) $userData);
         $this->eventDispatcher->dispatch($event);
@@ -28,6 +55,7 @@ $eventDispatcher->listen(UserRegisteredEvent::class, new LogRegistrationListener
 
 $userController = new UserController($eventDispatcher);
 $userController->register(['email' => 'test@example.com']);
+*/ 
 
 /*
 class UserController
